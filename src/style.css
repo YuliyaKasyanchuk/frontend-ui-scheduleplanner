@@ -1,0 +1,110 @@
+html {
+	height: 100%;
+    width: 100%;
+  
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+body {
+	font: 16px Arial,Geneva,Helvetica, sans-serif;
+	max-width:  960px;
+	height: 100%;
+    margin: 0 auto;
+}
+.wrapper {
+	max-width:960px;
+	margin: 0 auto;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+
+a{
+    color:#cdcdcd;
+    text-decoration: none;
+   
+}
+
+a:hover{
+     color:#1c2023;
+    
+     
+}
+
+/* Header
+-----------------------------------------------------------------------------*/
+.header {
+	height: 50px;
+	background: url(../gallery/header.png);
+ padding:5px 10px;
+    background-repeat: repeat;
+    max-width: 960px;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+
+.header_menu{
+    margin: 0 auto;
+    width:inherit;
+    
+}
+.header .header_menu .menu_list{
+    list-style-type: none;
+    margin:0; 
+    padding:0; 
+    text-align: center;
+}
+
+.header .header_menu .menu_item{
+   
+    text-align: center;
+    width: 86px;
+    height: 30px;
+    display: inline-block;
+	vertical-align:middle;
+    
+/*
+      margin-right: 20px;
+    padding:15 20px;
+*/
+   
+   
+   
+}
+
+.header a{
+    display: inline-block;
+	vertical-align:middle;
+    width: auto;
+    margin-top:12px;
+}
+
+.header a:focus{
+    border-radius: 15px;
+    background-color: rgb(151,152,153);
+    width:86px;
+    height: 30px;
+   
+    
+}
+
+
+/* Middle
+-----------------------------------------------------------------------------*/
+.content {
+	padding: 0 0 200px;
+}
+
+
+
+
+/* Footer
+-----------------------------------------------------------------------------*/
+.footer {
+	width: 960px;
+	margin: -200px auto 0;
+	height: 200px;
+	background: #BFF08E;
+	position: relative;
+}
