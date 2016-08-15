@@ -4,20 +4,23 @@ html {
     width:100%;
     cursor: default;
     font-family: Arial,Geneva, Helvetica, sans-serif;
+    font-size: 12px;
 }
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
 	display: block;
 }
 body {
-	font: 12px/18px Arial, sans-serif;
-	width: 320px;
+	
+	width: 100%;
+    min-width: 320px;
 	height: 100%;
     margin: 0 auto;
    
    
 }
 .wrapper {
-	width:300px;
+	width:960px;
+    min-width: 300px;
 	margin: 0 auto;
 	min-height: 100%;
 	height: auto !important;
@@ -28,9 +31,8 @@ body {
 
 a{
     text-decoration: none;
-   
-    font-size:12.8px;
-    line-height:2em;
+    font-size:16px;
+    line-height:normal;
 }
 
 h1{
@@ -53,61 +55,67 @@ h3{
 }
 /* Header
 -----------------------------------------------------------------------------*/
-.header {
-	height: 50px;
-	background: url(../gallery/header.png) repeat;
-    width: 320px;
+.header{
+    width:auto;
+    height: 50px;
+    background: url(../gallery/header.png) repeat;
     white-space: nowrap;
-}
-
-
-.header .menu{
     padding: 4px 4px 6px 4px;
     text-align: center;
+    
 }
+
 
 .header .menu_list{
     list-style-type: none;
     margin: 0;
-    padding: 0; 
-  
+    padding: 0;
+   
 }
 
 .header .menu_item{
     display: inline-block;
     vertical-align: middle;
+    padding-top: 8px;
 }
-
-.header .menu_item_div{
-    
-    max-width: 70px;
-    height: 24px;
-    border-radius: 15px;
-    display: block; 
-}
-
 
 .header a{
-    display: block;
+    display: inline-block;
+    vertical-align: middle;
     margin-right: 5px;
     color: #cdcdcd;
     width: auto;
-    height: 24px;
     border-radius: 15px;
-    min-width: 70px;
-    margin-top: 10px;
+    padding: 8px 12px;
+    font-size:12.8px;
 }
+/*
+.header a:last-child{
+     margin-right:0;
+}
+*/
 
 .header a:hover{
     background-color:rgb(152,153,154);
     width: auto;
-    height: 24px;
-    border-radius: 15px;
-    min-width: 70px; 
     color:#1c2023;
+    
+ 
 }
 
 
+@media (min-width: 320px) {
+    .header a{
+            font-size:16px;
+            padding: 10px 25px;
+            border-radius: 20px;
+        
+        } 
+    
+    
+}
+
+    
 /* Middle
 -----------------------------------------------------------------------------*/
 .content {
@@ -283,5 +291,7 @@ h3{
 
 .footer .rights p{
     margin-top: 10px;
-    margin-right: 12px;
+    margin-right: 25px;
 }
+
+
