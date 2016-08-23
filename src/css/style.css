@@ -12,9 +12,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 body {
 	
 	width: 100%;
-    min-width: 320px;
+    min-width: 300px;
 	height: 100%;
     margin: 0 auto;
+    background-image: url(../gallery/bg_sand_mobile_320.png);
+    background-repeat: repeat;
    
    
 }
@@ -35,15 +37,19 @@ a{
     line-height:normal;
 }
 
-h1{
-    
-}
+
 
 h3{
     font-size: 22px;
     color:#dbdbdb;
 }
 
+h1{
+    font-family: 'MyriadPro Bold',sans-serif;
+    font-size:23.38px;
+    line-height: normal;
+    color: #983904;
+}
 
 @font-face {
     font-family: "MyriadProRegular";
@@ -60,8 +66,9 @@ h3{
     height: 50px;
     background: url(../gallery/header.png) repeat;
     white-space: nowrap;
-    padding: 4px 4px 6px 4px;
+    padding: 4px;
     text-align: center;
+    min-width: 300px;
 }
 
 
@@ -69,23 +76,21 @@ h3{
     list-style-type: none;
     margin: 0;
     padding: 0;
-   
 }
 
 .header .menu_item{
     display: inline-block;
     vertical-align: middle;
-    padding-top: 8px;
+    padding-top: 10px;
 }
+
 
 .header a{
     display: inline-block;
     vertical-align: middle;
-    margin-right: 5px;
     color: #cdcdcd;
     width: auto;
     border-radius: 15px;
-    padding: 8px 12px;
     font-size:12.8px;
 }
 
@@ -93,15 +98,13 @@ h3{
     background-color:rgb(152,153,154);
     width: auto;
     color:#1c2023;
-    
- 
 }
 
 
-@media (min-width: 320px) {
+@media (min-width: 300px) {
      .header a{
             font-size:12.8px;
-            padding: 10px 15px;
+            padding: 5px 10px;
             border-radius: 20px;
         } 
 }
@@ -109,8 +112,7 @@ h3{
 @media (min-width: 480px) {
      .header a{
             font-size:16px;
-            padding: 10px 25px;
-            border-radius: 20px;
+            padding: 7px 25px;
         }  
 }
 
@@ -121,7 +123,21 @@ h3{
 	padding: 0 0 200px;
 }
 
+.content .schedule_planner{
+    width: 100%;
+    height: 200px;
+    margin-top: 25px;
+     display: inline-block;
+    vertical-align: middle;
+}
 
+.content .title{
+    left: 0;
+    top:0;
+    width: 42px;
+    height: 35px;
+   
+}
 
 
 /* Footer
@@ -303,7 +319,7 @@ h3{
     text-align: right;
     border-top: 1px solid;
     border-top-color: rgb(87, 87, 87);
-    border-top-width: 100%;
+/*    border-top-width: 100%;*/
     box-shadow: 0 -1px 0 #262626;   
     width:100%;
 /*    margin-left: -15px;*/
@@ -322,14 +338,7 @@ h3{
     
     .footer .social_links_and_input{
         width:480px;
-    }
-    
-/*
-    .footer .rights{
-        border-top-width: 100%;
-    }
-*/
-    
+    } 
     
 }
 
