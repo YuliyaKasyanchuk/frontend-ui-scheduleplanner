@@ -12,23 +12,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 body {
 	
 	width: 100%;
-    min-width: 300px;
+    min-width: 280px;
 	height: 100%;
     margin: 0 auto;
     background-image: url(../gallery/bg_sand_mobile_320.png);
     background-repeat: repeat;
-   
-   
 }
+
 .wrapper {
 	width:calc( 100% - 40px);
-    min-width: 300px;
+    min-width: 280px;
 	margin: 0 auto;
 	min-height: 100%;
 	height: auto !important;
 	height: 100%;
-   
-  
 }
 
 a{
@@ -36,8 +33,6 @@ a{
     font-size:16px;
     line-height:normal;
 }
-
-
 
 h3{
     font-size: 22px;
@@ -68,7 +63,7 @@ h1{
     white-space: nowrap;
     padding: 4px;
     text-align: center;
-    min-width: 300px;
+    min-width: 280px;
 }
 
 
@@ -101,7 +96,7 @@ h1{
 }
 
 
-@media (min-width: 300px) {
+@media (min-width: 280px) {
      .header a{
             font-size:12.8px;
             padding: 5px 10px;
@@ -143,30 +138,18 @@ h1{
 /* Footer
 -----------------------------------------------------------------------------*/
 .footer {
-/*	width: 100%;*/
 	margin: -200px auto 0;
 	height: auto;
 	background: rgb(57,57,57);
-/*	position: relative;*/
 }
 
 .footer .wrapper{
-/*    width: 290px;*/
     height:auto;
-/*    width: calc(100% - 40px);*/
     max-width: 960px;
-/*
-    display:inline-block;
-    vertical-align: bottom;
-*/
     padding: 30px 5px 10px 5px;
 }
 
 .footer .social_links_and_input{
-/*
-    display: inline-block;
-    vertical-align: bottom;
-*/
     width: 100%;
     margin-bottom: 30px;
 }
@@ -179,7 +162,6 @@ h1{
     width:auto;
     display: inline-block;
     vertical-align: bottom;
-/*    margin-right: 30px;*/
 }
 
 .footer .social_link{
@@ -199,14 +181,8 @@ h1{
     margin-right: 0;
 }
 
-.footer a .social_link:hover
-{
-   background-color: #d65600;
-}
-
-
 .footer .social_link .mail{
-    background: url(../gallery/mail_mobile_320.png) no-repeat;
+    background: url(../gallery/mail-mobile.png) no-repeat;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -217,7 +193,7 @@ h1{
 }
 
 .footer .social_link .twitter{
-   background: url(../gallery/twitter_mobile_320.png) no-repeat;
+   background: url(../gallery/twitter-mobile.png) no-repeat;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -227,7 +203,7 @@ h1{
 }
 
 .footer .social_link .facebook{
-    background: url(../gallery/facebook_mobile_320.png) no-repeat;
+    background: url(../gallery/facebook-mobile.png) no-repeat;
     background-position: center center;
     width: 100%;
     height: 100%;
@@ -238,7 +214,7 @@ h1{
 }
 
 .footer .social_link .linkedin{
-   background: url(../gallery/linkedin-icon.png) no-repeat;
+   background: url(../gallery/linkedin-mobile.png) no-repeat;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -294,7 +270,7 @@ h1{
     left:140px;
     padding: 5px 10px;
     line-height: 15px;
-    word-wrap: break-word;
+    white-space: nowrap;
     color:#eaeaea;
 }
 
@@ -317,14 +293,9 @@ h1{
 .footer .rights{
     color: #c3c3c3;
     text-align: right;
-    border-top: 1px solid;
-    border-top-color: rgb(87, 87, 87);
-/*    border-top-width: 100%;*/
+    border-top: 1px solid rgb(87, 87, 87);
     box-shadow: 0 -1px 0 #262626;   
     width:100%;
-/*    margin-left: -15px;*/
- 
-  
 }
 
 .footer .rights p{
@@ -344,17 +315,17 @@ h1{
 
 @media (min-width: 320px){
 
- .footer .rights{
+.footer .rights{
      width: 100%;
      text-align: center;
      border-top-width: 100%;
-}  
+     }  
 .footer .partners{
     display: inline-block;
     vertical-align: center;
     height: auto;
     width: auto;
-}
+    }
     
     
  .footer .social_links_and_input{
@@ -362,8 +333,4 @@ h1{
     vertical-align: center;
     }
    
-    .footer{
-        height: auto;
-    }
-    
-    }
+}
